@@ -1,0 +1,384 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 17, 2015, 4:12:23 PM
+    Author     : Santi
+*/
+
+body{
+    background: #f1f1f1;
+}
+
+body{
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+
+body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    line-height: 1;
+    text-align: start;
+}
+
+body>#body-container{
+    height: auto;
+    min-height: 100%;
+}
+
+button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+button{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+button{
+    margin: 0em;
+    font: normal normal normal 13.3333330154419px/normal Arial;
+    color: initial;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;  
+}
+
+button{
+   text-align: center;
+   cursor: default;
+   color: buttontext;
+   padding: 2px 6px 3p;
+   border: 2px outset buttonface;
+   border-image-source: initial;
+   border-image-slice: initial;
+   border-image-width: initial;
+   border-image-outset: initial;
+   border-image-repeat: initial;
+   background-color: buttonface;
+   box-sizing: border-box;
+}
+
+div{
+    display: block;
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+div.yt-uix-button{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#appbar-guide-button-container{
+    position: relative;
+    display: inline-block;
+}
+
+#appbar-guide-button-notification-check{
+    background: #167ac6;
+    color: #fff;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+}
+
+#appbar-guide-button-notification-check{
+    height: 25px;
+    width: 30px;
+    top: 0;
+    right: 10px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    transition: opacity .3s,visibility 0 .3s;
+}
+
+#appbar-guide-button .yt-uix-button-arrow{
+    border-top-color: #b8b8b8;
+    margin-left: 2px;
+    border-width: 3px 3px 0;
+}
+
+#appbar-guide-button .yt-uix-button-arrow{
+    margin-top: 0;
+}
+
+#appbar-main-guide-notification-container{
+    position: absolute;
+    top: 41px;
+    left: 0;
+    z-index: 1;
+}
+
+#appbar-onebar-upload-group{
+    margin-right: 15px;
+}
+
+#appbar-onebar-upload-group #upload-btn{
+    padding: 0 13px;
+}
+
+#appbar-onebar-upload-group #upload-btn .yt-uix-button-content{
+    vertical-align: middle;
+}
+
+#body-container{
+    padding-bottom: 191px;
+    box-sizing: border-box;
+}
+
+#masthead-positioner{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1999999999;
+    transform: translateZ(0);
+}
+
+#masthead-positioner:hover #appbar-guide-button .yt-uix-button-arrow{
+    border-top-color: #666;
+}
+
+#yt-masthead{
+    margin: 0 auto;
+}
+
+#yt-masthead-container{
+    position: relative;
+    min-width: 0;
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    padding-top: 7px;
+    padding-bottom: 8px;    
+}
+
+#yt-masthead-user{
+    float: right;
+    margin-left: 50px;
+    margin-top: 3px;
+    color: #555;
+}
+
+#yt-masthead-user #sb-button-notify{
+    margin: 0 10px 0 5px;
+    width: 32px;
+    text-align: center;
+    border: none;
+    position: relative;
+    background: none;
+    box-shadow: none;
+    
+}
+
+#yt-masthead-user .sb-notif-off .yt-uix-button-content{
+    display: none;
+}
+
+#yt-masthead-user .yt-uix-button-icon-bell{
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -85px -191px;
+    background-size: auto;
+    width: 30px;
+    height: 30px;
+    opacity: .55; 
+}
+
+#yt-masthead-content{
+    overflow: hidden;
+}
+
+#yt-masthead #logo{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -207px -66px;
+    background-size: auto;
+    width: 72px;
+    height: 30px;
+}
+
+#yt-masthead #logo-container span.content-region{
+    position: relative;
+    top: -19px;
+    left: 2px;
+    color: #777;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+#yt-masthead .yt-masthead-logo-container{
+    float: left;
+    position: relative;
+    margin-top: 2px;
+    width: 200px;
+}
+
+#yt-masthead .yt-masthead-logo-container #logo-container{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.appbar-guide-notification-icon{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -157px -334px;
+    background-size: auto;
+    width: 12px;
+    height: 10px;
+}
+
+.appbar-hidden #masthead-positioner-height-offset{
+    height: 50px;
+}
+
+.clearfix{
+    
+}
+
+.clearfix:before{
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix:after{
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.yt-base-gutter{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.yt-sprite{
+    display: inline-block;
+}
+
+.yt-uix-button{
+    display: inline-block;
+    height: 28px;
+    border: solid 1px transparent;
+    padding: 0 10px;
+    outline: 0;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: normal;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.yt-uix-button .yt-uix-button-arrow, .yt-uix-button .yt-uix-button-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.yt-uix-button-default{
+    border-color: #d3d3d3;
+    background: #f8f8f8;
+    color: #333;
+}
+
+.yt-uix-button-default:before{
+    opacity: .5;
+}
+
+.yt-uix-button-default:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.yt-uix-button-empty .yt-uix-button-icon-wrapper{
+    max-height: none;
+    max-width: none;
+}
+
+.yt-uix-button-empty .yt-uix-button-icon-wrapper{
+    margin-right: 0;
+}
+
+.yt-uix-button-has-icon:before{
+    content: '.';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.yt-uix-button-icon-wrapper{
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.yt-uix-button-icon-wrapper{
+    margin-right: 6px;
+}
+
+.yt-uix-button-icon-appbar-guide{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -62px -46px;
+    background-size: auto;
+    width: 16px;
+    height: 16px;
+}
+
+.yt-uix-button-text{
+    border: solid 1px transparent;
+    outline: 0;
+    background: none;
+    color: #333;
+    box-shadow: none;
+}
+
+.yt-uix-button-icon-wrapper+.yt-uix-button-content{
+    vertical-align: middle;
+}
+
+.yt-valign{
+    white-space: nowrap;
+}
+
+.yt-valign:before{
+    content: '';
+    height: 100%;
+}
+
+.yt-valign:before{
+    vertical-align: middle;
+    display: inline-block;
+}

@@ -9,8 +9,55 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
-        <div>TODO write content</div>
+    <body class="appbar-hidden">
+        <div id="body-container">
+            <div id="masthead-positioner">
+                <div id="yt-masthead-container" class="clearfix yt-base-gutter">
+                    <div id="yt-masthead" class>
+                        <div class="yt-masthead-logo-container">
+                            <div id="logo-container" class="spf-link yt-uix-sessionlink">
+                                <img id="logo" src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt/>
+                                <span class="content-region">TH</span>
+                            </div>
+                            <div id="appbar-guide-button-container">
+                                <button class="yt-uix-button yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon" id="appbar-guide-button" type="submit">                       
+                                    <span class="yt-uix-button-icon-wrapper">
+                                        <span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span>
+                                    </span>
+                                    <span class="yt-uix-button-arrow yt-sprite"></span>
+                                </button>
+                                <div id="appbar-guide-button-notification-check" class="yt-valign">
+                                    <span class="appbar-guide-notification-icon yt-valign-content yt-sprite"></span>
+                                </div>
+                            </div>
+                            <div id="appbar-main-guide-notification-container"></div>
+                        </div>
+                        <div id="yt-masthead-user" class="yt-uix-clickcard">
+                            <span id="appbar-onebar-upload-group">
+                                <div class ="yt-uix-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" id="upload-btn">
+                                    <span class="yt-uix-button-content">อัปโหลด</span>
+                                </div>
+                            </span>
+                            <button class="yt-uix-button yt-uix-size-default yt-uix-button-default yt-uix-button-has-icon sb-notif-off" type="submit" id="sb-button-notify">
+                                <span class="yt-uix-button-icon-wrapper">
+                                    <span class="yt-uix-button-icon yt-uix-button-icon-bell yt-sprite"></span>
+                                </span>
+                                <span class="yt-uix-button-content">0</span>
+                            </button>
+                            <span id="yt-masthead-account-picker" class="yt-uix-clickcard">
+                                <button></button>
+                                <div></div>
+                            </span>
+                        </div>
+                        <div id="yt-masthead-content"></div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div id="masthead-positioner-height-offset"></div>
+            <div id="page-container"></div>
+        </div>
     </body>
 </html>
