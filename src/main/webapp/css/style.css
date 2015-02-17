@@ -12,7 +12,7 @@ body{
     background: #f1f1f1;
 }
 
-body{
+body,button,input{
     font-family: arial,sans-serif;
     font-size: 13px;
 }
@@ -37,7 +37,7 @@ body>#body-container{
     min-height: 100%;
 }
 
-button{
+button,span{
     margin: 0;
     padding: 0;
     border: 0;
@@ -49,7 +49,7 @@ button{
     box-sizing: border-box;
 }
 
-button{
+button,input{
     margin: 0em;
     font: normal normal normal 13.3333330154419px/normal Arial;
     color: initial;
@@ -62,18 +62,23 @@ button{
 }
 
 button{
-   text-align: center;
-   cursor: default;
-   color: buttontext;
-   padding: 2px 6px 3p;
-   border: 2px outset buttonface;
-   border-image-source: initial;
-   border-image-slice: initial;
-   border-image-width: initial;
-   border-image-outset: initial;
-   border-image-repeat: initial;
-   background-color: buttonface;
-   box-sizing: border-box;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    padding: 2px 6px 3p;
+    border: 2px outset buttonface;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+}
+
+button.yt-uix-button{
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 div{
@@ -88,9 +93,16 @@ div{
     background: transparent;
 }
 
-div.yt-uix-button{
-    text-decoration: none;
-    box-sizing: border-box;
+label{
+    cursor: default;
+}
+
+#appbar-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    overflow: hidden;
 }
 
 #appbar-guide-button-container{
@@ -154,6 +166,18 @@ div.yt-uix-button{
     box-sizing: border-box;
 }
 
+#masthead-appbar{
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    height: 40px;
+    line-height: 40px;
+}
+
+#masthead-appbar-container{
+    overflow: hidden;
+}
+
 #masthead-positioner{
     position: fixed;
     top: 0;
@@ -163,13 +187,119 @@ div.yt-uix-button{
     transform: translateZ(0);
 }
 
+#masthead-positioner:hover #appbar-guide-button{
+    border-color: #d3d3d3;
+    background: #f8f8f8;
+}
+
 #masthead-positioner:hover #appbar-guide-button .yt-uix-button-arrow{
     border-top-color: #666;
+}
+
+#masthead-search{
+    position: relative;
+    padding: 0;
+    margin-top: 3px;
+    overflow: hidden;
+    max-width: 650px;
+}
+
+#masthead-search .consolidated-from input{
+    outline: none;
+    height: 100%;
+}
+
+#masthead-search .search-btn-componet .yt-uix-button-content{
+    display: block;
+    border: none;
+    padding: 0;
+    opacity: .6;
+    text-indent: -10000px;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -155px -172px;
+    background-size: auto;
+    width: 14px;
+    height: 14px;
+    box-shadow: none;
+}
+
+#masthead-search-terms{
+    position: relative;
+    overflow: hidden;
+    height: 29px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-transition: border-color .2s ease;
+    transition: border-color .2s ease;
+    width: 585;
+}
+
+#masthead-search label{
+    height: 100%;
+    line-height: 30px;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+
+#masthead-search-terms label{
+    display: block;
+}
+
+#masthead-search-terms input{
+    display: inline-block;
+    width: 100%;
+    padding: 2px 6px;
+    margin: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    zoom: 1;
+    box-sizing: border-box;
+}
+
+#player{
+    margin: 10px auto 0;
+    color: #fff;
+    zoom: 1;
+    transition: background-color .3s ease-in-out,background-image .3s ease-in-out;
 }
 
 #yt-masthead{
     margin: 0 auto;
 }
+
+#yt-masthead #search-btn{
+    padding: 0;
+}
+
+#yt-masthead #search-btn .yt-uix-button-content{
+    margin: 0 25px;
+}
+
+#yt-masthead .search-btn-componet{
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#yt-masthead .search-btn-componet{
+    float: right;
+    padding: 0 .91cm;
+    opacity: 1;
+    filter :none;
+}
+
+#yt-masthead .search-btn-componet{
+    height: 29px;
+}
+
 
 #yt-masthead-container{
     position: relative;
@@ -178,6 +308,12 @@ div.yt-uix-button{
     border-bottom: 1px solid #e8e8e8;
     padding-top: 7px;
     padding-bottom: 8px;    
+}
+
+#yt-masthead-signin{
+    float: right;
+    margin-top: 3px;
+    margin-left: 25px;
 }
 
 #yt-masthead-user{
@@ -195,7 +331,7 @@ div.yt-uix-button{
     position: relative;
     background: none;
     box-shadow: none;
-    
+
 }
 
 #yt-masthead-user .sb-notif-off .yt-uix-button-content{
@@ -253,12 +389,16 @@ div.yt-uix-button{
     height: 10px;
 }
 
+.appbar-hidden #masthead-appbar{
+    margin-top: -41px;
+}
+
 .appbar-hidden #masthead-positioner-height-offset{
     height: 50px;
 }
 
 .clearfix{
-    
+
 }
 
 .clearfix:before{
@@ -274,6 +414,17 @@ div.yt-uix-button{
     height: 0;
     visibility: hidden;
     clear: both;
+}
+
+.masthead-search-terms-border{
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px #eee;
+}
+
+.watch.watch-non-stage-mode #player.content-alignment{
+    width: auto;
+    min-height: 1003px;
+    max-width: 1066px;
 }
 
 .yt-base-gutter{
@@ -314,7 +465,7 @@ div.yt-uix-button{
     color: #333;
 }
 
-.yt-uix-button-default:before{
+/*.yt-uix-button-default:before{
     opacity: .5;
 }
 
@@ -323,7 +474,7 @@ div.yt-uix-button{
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-}
+}*/
 
 .yt-uix-button-empty .yt-uix-button-icon-wrapper{
     max-height: none;
@@ -335,9 +486,16 @@ div.yt-uix-button{
 }
 
 .yt-uix-button-has-icon:before{
-    content: '.';
+    content: '';
     display: inline-block;
     vertical-align: middle;
+}
+
+.yt-uix-button-icon-appbar-guide{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -62px -46px;
+    background-size: auto;
+    width: 16px;
+    height: 16px;
 }
 
 .yt-uix-button-icon-wrapper{
@@ -350,11 +508,14 @@ div.yt-uix-button{
     margin-right: 6px;
 }
 
-.yt-uix-button-icon-appbar-guide{
-    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -62px -46px;
-    background-size: auto;
-    width: 16px;
-    height: 16px;
+.yt-uix-button-icon-wrapper+.yt-uix-button-content{
+    vertical-align: middle;
+}
+
+.yt-uix-button-primary{
+    border-color: #167ac6;
+    background: #167ac6;
+    color: #fff;
 }
 
 .yt-uix-button-text{
@@ -365,9 +526,7 @@ div.yt-uix-button{
     box-shadow: none;
 }
 
-.yt-uix-button-icon-wrapper+.yt-uix-button-content{
-    vertical-align: middle;
-}
+
 
 .yt-valign{
     white-space: nowrap;

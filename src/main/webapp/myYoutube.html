@@ -4,14 +4,14 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html class="no-focus-outline">
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body class="appbar-hidden">
+    <body class="appbar-hidden appbar-hidden " id="body">
         <div id="body-container">
             <div id="masthead-positioner">
                 <div id="yt-masthead-container" class="clearfix yt-base-gutter">
@@ -22,7 +22,7 @@ and open the template in the editor.
                                 <span class="content-region">TH</span>
                             </div>
                             <div id="appbar-guide-button-container">
-                                <button class="yt-uix-button yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon" id="appbar-guide-button" type="submit">                       
+                                <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor" id="appbar-guide-button" type="button">                       
                                     <span class="yt-uix-button-icon-wrapper">
                                         <span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span>
                                     </span>
@@ -34,30 +34,45 @@ and open the template in the editor.
                             </div>
                             <div id="appbar-main-guide-notification-container"></div>
                         </div>
-                        <div id="yt-masthead-user" class="yt-uix-clickcard">
+                        <div id="yt-masthead-signin">
                             <span id="appbar-onebar-upload-group">
-                                <div class ="yt-uix-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" id="upload-btn">
+                                <button class ="yt-uix-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" id="upload-btn">
                                     <span class="yt-uix-button-content">อัปโหลด</span>
-                                </div>
+                                </button>
                             </span>
-                            <button class="yt-uix-button yt-uix-size-default yt-uix-button-default yt-uix-button-has-icon sb-notif-off" type="submit" id="sb-button-notify">
-                                <span class="yt-uix-button-icon-wrapper">
-                                    <span class="yt-uix-button-icon yt-uix-button-icon-bell yt-sprite"></span>
-                                </span>
-                                <span class="yt-uix-button-content">0</span>
+                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary" type="button">
+                                <span class="yt-uix-button-content">ลงชื่อเข้าใช้</span>
                             </button>
-                            <span id="yt-masthead-account-picker" class="yt-uix-clickcard">
-                                <button></button>
-                                <div></div>
-                            </span>
                         </div>
-                        <div id="yt-masthead-content"></div>
+                        <div id="yt-masthead-content">   
+                            <div id="masthead-search" class="search-from consolidated-from">
+                                <button class="yt-uix-button yt-uix-button-size-default yt-uix search-btn-componet search-button" type="submit" id="search-btn">
+                                    <span class="yt-uix-button-content">ค้นหา</span>
+                                </button>
+                                <div id="masthead-search-terms" class="masthead-search-terms-border">
+                                    <label>
+                                        <input id="masthead-search-terms" class="search-term yt-uix-from-input-bidi" style="outline: none">
+                                    </label>
+                                </div>
+                            </div>    
+                       </div>
                     </div>
                 </div>
-                <div></div>
+                <div id="masthead-appbar-container" class="clearfix">
+                    <div id="masthead-appbar">
+                        <div id="appbar-content" class></div>
+                    </div>
+                </div>
             </div>
             <div id="masthead-positioner-height-offset"></div>
-            <div id="page-container"></div>
+            <div id="page-container">
+                <div id="page" class="watch watch-non-stage-mode clearfix">
+                    <div id="player" class="content-alignment watch-small">
+                        
+                    </div>
+                    <div></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
