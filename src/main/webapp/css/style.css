@@ -741,6 +741,43 @@ video{
     display: inline-block;
 }
 
+.ytp-button{
+    cursor: pointer;
+    float: left;
+    outline: 0 none;
+}
+
+.ytp-button-fullscreen-enter{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) -63px -1066px;
+    background-size: auto;
+    width: 30px;
+    height: 27px;
+}
+
+.ytp-button-fullscreen-enter{
+    display: none;
+    float: right;
+}
+
+.ytp-button-play{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) -39px -1540px;
+    background-size: auto;
+    width: 55px;
+    height: 27px;
+}
+
+.ytp-button-play{
+    float: left;
+}
+
+.ytp-button-watch-later{
+    float: right;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) 0 -1571px;
+    background-size: auto;
+    width: 30px;
+    height: 27px;
+}
+
 .ytp-force-transform{
     -moz-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
@@ -859,6 +896,28 @@ video{
     transition: all .1s;
 }
 
+.ytp-settings-button{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) 0 -1719px;
+    background-size: auto;
+    width: 30px;
+    height: 27px;
+}
+
+.ytp-settings-button{
+    float: right;
+}
+
+.ytp-size-toggle-large{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) 0 -1509px;
+    background-size: auto;
+    width: 30px;
+    height: 27px;
+}
+
+.ytp-size-toggle-large{
+    float: right;
+}
+
 .ytp-unloaded-progress{
     z-index: 932;
     background: #444;
@@ -874,4 +933,9 @@ video{
     -ms-transform-origin: 0 0;
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
+}
+
+.ytp-volume-hover-area{
+    float: left;
+    display: inline-block;
 }
