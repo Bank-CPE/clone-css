@@ -8,6 +8,20 @@ and open the template in the editor.
     Author     : Santi
 */
 
+a{
+    cursor: pointer;
+    color: #167ac6;
+    text-decoration: none;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
 body{
     background: #f1f1f1;
 }
@@ -88,6 +102,28 @@ div{
     font-size: 100%;
     background: transparent;
 }
+
+h1{
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h1.yt{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h1.yt{
+    margin-top: 0;
+    margin-bottom: 13px;
+    color: #222;
+}
+
 
 label{
     cursor: default;
@@ -281,6 +317,90 @@ video{
     transition: background-color .3s ease;
 }
 
+#watch7-content{
+    width: 640px;
+    z-index: 0;
+}
+
+#watch-header{
+    padding-bottom: 5px;
+}
+
+#watch-header .yt-user-info{
+    margin-left: 58px;
+    white-space: nowrap;
+    width: 380px;
+}
+
+#watch-header .yt-user-info a{
+    display: inline-block;
+    height: 22px;
+    color: #333;
+    font-weight: bold;
+    max-width: 315px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+}
+
+#watch-header .yt-user-photo{
+    float: left;
+}
+
+#watch7-headline h1{
+    line-height: normal;
+    overflow: hidden;
+}
+
+#watch7-headline h1 .long-title{
+    font-size: .9em;
+    letter-spacing: -0.03em;
+}
+
+#watch-headline-title{
+    display: table;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#watch7-main{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#watch7-preview{
+    position: relative;
+    margin-top: -390px;
+    z-index: 1000;
+}
+
+#watch7-sidebar{
+    position: relative;
+    margin-top: -390px;
+    margin-left: 650px;
+    margin-bottom: 20px;
+    -moz-transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
+    -webkit-transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
+    transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
+}
+
+#watch7-subscription-container{
+    margin-left: 10px;
+}
+
+#watch7-user-header{
+    position: relative;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#watch8-action-button{
+    position: relative;
+    padding-top: 5px;
+    border-top: 1px solid #e2e2e2;
+}
+
 #yt-masthead{
     margin: 0 auto;
 }
@@ -424,6 +544,14 @@ video{
     height: 0;
     visibility: hidden;
     clear: both;
+}
+
+.content-alignment{
+    width: 1003px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .countdowntimer{
@@ -624,15 +752,30 @@ video{
     width: 640px;
 }
 
+.video-thumb{
+    position: relative;
+}
+
+.watch #content.content-alignment{
+    width: auto;
+    min-width: 1003px;
+    max-width: 1066px;
+}
+
 .watch-main-col{
     float: left;
     clear: left;
     width: 640px;
 }
 
+.watch-title-container{
+    display: table-cell;
+    vertical-align: top;
+}
+
 .watch.watch-non-stage-mode #player.content-alignment{
     width: auto;
-    min-height: 1003px;
+    min-width: 1003px;
     max-width: 1066px;
 }
 
@@ -641,9 +784,62 @@ video{
     padding-right: 30px;
 }
 
+.yt-card{
+    margin: 10px 0;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.yt-card.yt-card-has-padding{
+    padding: 15px;
+}
 
 .yt-sprite{
     display: inline-block;
+}
+
+.yt-thumb{
+    overflow: hidden;
+    background: #f1f1f1;
+    font-size: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.yt-thumb .vertical-align{
+    height: 100%;
+}
+
+.yt-thumb-48{
+    width: 48px;
+}
+
+.yt-thumb-clip{
+    position: absolute;
+    bottom: -100px;
+    top: -100px;
+    left: -100px;
+    right: -100px;
+    text-align: center;
+    white-space: nowrap;
+    word-break: normal;
+}
+
+.yt-thumb-clip .vertical-align{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.yt-thumb-square{
+    padding-bottom: 100%;
+}
+
+.yt-thumb-square{
+    display: block;
+    height: auto;
 }
 
 .yt-uix-button{
@@ -717,6 +913,12 @@ video{
     color: #fff;
 }
 
+.yt-uix-button-subscription-container{
+    max-width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+}
+
 .yt-uix-button-text{
     border: solid 1px transparent;
     outline: 0;
@@ -777,6 +979,20 @@ video{
     width: 30px;
     height: 27px;
 }
+
+.ytp-button-volume{
+    float: left;
+}
+
+.ytp-button-volume{
+    display: inline-block;
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/player-common-vfluJNmSn.webp) -39px -124px;
+    background-size: auto;
+    width: 35px;
+    height: 27px;
+    box-shadow: none;
+}
+
 
 .ytp-force-transform{
     -moz-transform: translate3d(0,0,0);
@@ -918,6 +1134,27 @@ video{
     float: right;
 }
 
+.ytp-time-current{
+    color: #fff;
+}
+
+.ytp-time-display{
+    font-size: 11px;
+    float: left;
+    padding-left: 6px;
+    line-height: 27px;
+    color: #999;
+}
+
+.ytp-time-live-badge{
+    display: none;
+    margin-left: 8px;
+    padding: 1px 4px;
+    line-height: 1;
+    font-size: 10px;
+    color: #fff;
+}
+
 .ytp-unloaded-progress{
     z-index: 932;
     background: #444;
@@ -935,7 +1172,67 @@ video{
     transform-origin: 0 0;
 }
 
+.ytp-volume-control{
+    float: left;
+    padding-right: 4px;
+}
+
 .ytp-volume-hover-area{
     float: left;
     display: inline-block;
+}
+
+.ytp-volume-panel{
+    display: inline-block;
+    width: 1px;
+    overflow: hidden;
+    -moz-transition: width .5s ease-out .2s;
+    -webkit-transition: width .5s ease-out .2s;
+    transition: width .5s ease-out .2s;
+}
+
+.ytp-volume-panel, .ytp-volume-slider{
+    outline: 0 none;
+}
+
+.ytp-volume-slider{
+    position: relative;
+    display: block;
+    height: 27px;
+    width: 51px;
+    float: left;
+    margin: 0 6px 0 1px;
+    padding: 0 3px 0 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.ytp-volume-slider-foreground{
+    position: absolute;
+    bottom: 6.5px;
+    height: 14px;
+    width: 5px;
+    background: #ddd;
+}
+
+.ytp-volume-slider-foreground:before{
+    position: absolute;
+    top: 5px;
+    left: -55px;
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #b91f1f;
+    content: '';
+}
+
+.ytp-volume-slider-foreground:after{
+    position: absolute;
+    top: 5px;
+    display: block;
+    width: 55px;
+    height: 4px;
+    content: '';
+    background: #777;
+    left: 5px;
 }

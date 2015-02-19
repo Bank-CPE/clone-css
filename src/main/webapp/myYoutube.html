@@ -11,6 +11,8 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
     </head>
+    
+    
     <body class="appbar-hidden appbar-hidden " id="body">
         <div id="body-container">
             <div id="masthead-positioner">
@@ -103,10 +105,27 @@ and open the template in the editor.
                                             </div>
                                             <div class="html5-player-chrome">
                                                 <div class="ytp-button ytp-button-play" role="button"></div>
-                                                <span class="ytp-volume-hover-area" role="button"></span>
+                                                <span class="ytp-volume-hover-area" role="button">
+                                                    <div class="ytp-volume-control">
+                                                        <div class="ytp-button ytp-button-volume" role="button"></div>
+                                                        <div class="ytp-volume-panel" role="slider">
+                                                            <div class="ytp-volume-slider">
+                                                                <div class="ytp-volume-slider-foreground" style="left: 49px;"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="ytp-time-display html5-control">
+                                                        <span class="ytp-time-current">0:00</span>
+                                                        <span class="ytp-time-separator">/</span>
+                                                        <span class="ytp-time-duration">0:00</span>
+                                                        <span class="ytp-time-live-badge">Live</span>
+                                                    </div>
+                                                </span>
                                                 <div class="ytp-button ytp-button-fullscreen-enter" role="button" style="display: inline-block;"></div>
                                                 <div class="ytp-button ytp-size-toggle-large" role="button" style="display: inline-block;"></div>
-                                                <div class="ytp-button ytp-settings-button" role="button" id="settings_button"></div>
+                                                <div class="ytp-button ytp-settings-button" role="button" id="settings_button">
+                                                    <div class></div>
+                                                </div>
                                                 <div class="ytp-button ytp-button-watch-later" role="button"></div>
                                             </div>
                                             <div class="typ-menu-container" tabindex="-1" style="display: none;"></div>
@@ -117,7 +136,55 @@ and open the template in the editor.
                             </div>
                         </div>
                     </div>
-                    <div></div>
+                    <div id="content" class="content-alignment" role="main">
+                        <div id="watch7-container"class>
+                            <div id="watch7-main-container">
+                                <div id="watch7-main" class="clearfix">
+                                    <div id="watch7-preview" class="player-width player-height hid"></div>
+                                    <div id="watch7-content" class="watch-main-col">
+                                        <div id="watch-header" class="yt-card yt-card-has-padding">
+                                            <div id="watch7-headline" class="clearfix">
+                                                <div id="watch-headline-title">
+                                                    <h1 class="yt watch-title-container">
+                                                        <span id="eow-title" class="watch-title long-title" dir="ltr" title="Santi Homcheun">Santi Homcheun</span>
+                                                    </h1>
+                                                </div>
+                                            </div>
+                                            <div id="watch7-user-header" class="spf-link">
+                                                <a class="yt-user-photo yt-uix-sessionlink spf-link g-hovercard">
+                                                    <span class="video-thumb yt-thumb yt-thumb-48 g-hovercard">
+                                                        <span class="yt-thumb-square">
+                                                            <span class="yt-thumb-clip">
+                                                                <img src="http://3.bp.blogspot.com/-VPSSKHLfXMg/UMbIISdXEII/AAAAAAAAAKs/xrR5xPnTTMU/s1600/how-to-hack-yahoo-account-632x350.png" width="48" height="48" >
+                                                                <span class="vertical-align"></span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                                <div class="yt-user-info">
+                                                    <a class="yt-uix-sessionlink spf-link g-hovercard">BANK</a>
+                                                </div>
+                                                <span id="watch7-subscription-container">
+                                                    <span class="yt-uix-button-subscription-container">
+                                                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-can-buffer yt-uix-subscription-button" type="button"></button>
+                                                        <button></button>
+                                                        <span></span>
+                                                        <div></div>            
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div id="watch8-action-button" class="watch-action-button clearfix">action-button</div>
+                                        </div>
+                                        <div id="watch-action-panels" class="watch-action-panels yt-uix-button-panel hid yt-card-has-padding"></div>
+                                        <div id="action-panel-details" class="action-panel-content yt-card yt-card-has-padding yt-uix-expander yt-uix-expander-collapsed"></div>
+                                        <div id="watch-discussion" class="yt-card branded-page-box scrolldetect"></div>
+                                    </div>
+                                    <div id="watch7-sidebar" class="watch-sidebar"></div>
+                                </div>
+                            </div>
+                            <div id="watch7-hidden-extras"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
