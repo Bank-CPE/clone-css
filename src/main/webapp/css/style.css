@@ -7,37 +7,7 @@ and open the template in the editor.
     Created on : Feb 17, 2015, 4:12:23 PM
     Author     : Santi
 */
-::-webkit-scrollbar {
-    height: 16px;
-    overflow: visible;
-    width: 16px;
-}
 
-::-webkit-scrollbar-button {
-    height: 0;
-    width: 0;
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.2);
-    background-clip: padding-box;
-    border: solid transparent;
-    border-width: 1px 1px 1px 6px;
-    min-height: 28px;
-    padding: 100px 0 0;
-    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
-    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
-}
-
-::-webkit-scrollbar-track {
-    background-clip: padding-box;
-    border: solid transparent;
-    border-width: 0 0 0 4px;
-}
 
 a{
     cursor: pointer;
@@ -77,17 +47,6 @@ body{
     text-align: start;
 }
 
-body{
-    font: normal 13px arial,sans-serif
-}
-
-body[Attributes Style] {
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
 body {
     display: block;
     margin: 8px;
@@ -97,28 +56,6 @@ body {
 body>#body-container{
     height: auto;
     min-height: 100%;
-}
-
-body::-webkit-scrollbar-corner {
-    background-clip: padding-box;
-    background-color: #f5f5f5;
-    border: solid #fff;
-    border-width: 3px 0 0 3px;
-    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.14);
-    box-shadow: inset 1px 1px 0 rgba(0,0,0,.14);
-}
-
-body::-webkit-scrollbar-thumb {
-    border-width: 1px 1px 1px 5px;
-}
-
-body::-webkit-scrollbar-track-piece {
-    background-clip: padding-box;
-    background-color: #f5f5f5;
-    border: solid #fff;
-    border-width: 0 0 0 3px;
-    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
-    box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
 }
 
 button,span{
@@ -194,16 +131,10 @@ h1.yt{
     color: #222;
 }
 
-html{
-    display: block;
+img[Attributes Style] {
+    width: 120px;
+    height: 90px;
 }
-
-html[Attributes Style] {
-    -webkit-locale: th;
-    direction: ltr;
-    unicode-bidi: embed;
-}
-
 
 label{
     cursor: default;
@@ -225,6 +156,11 @@ p{
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
+
+strong{
+    font-weight: bold;
+}
+
 
 ul{
     list-style: none;
@@ -451,6 +387,26 @@ video{
     margin-top: 50px;
 }
 
+#watch-channel-brand-div{
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    max-height: 265px;
+    width: 300px;
+}
+
+#watch-channel-brand-div-text{
+    display: none;
+    position: absolute;
+    top: -10px;
+    height: 10px;
+    text-align: center;
+    line-height: 10px;
+    font-size: 10px;
+    color: #777;
+    width: 300px;
+}
+
 #watch-header{
     padding-bottom: 5px;
 }
@@ -537,6 +493,41 @@ video{
     -moz-transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
     -webkit-transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
     transition: margin-top .3s ease-in-out,padding-top .3s ease-in-out;
+}
+
+#watch7-sidebar .video-list-item:hover .title {
+    color: #167ac6;
+    text-decoration: none;
+}
+
+
+#watch7-sidebar .video-list-item a:hover .title{
+    color: #167ac6;
+}
+
+
+#watch7-sidebar .video-list-item a:hover:visited .title{
+    color: #036;
+}
+
+#watch7-sidebar .video-list-item a:visited .title{
+    color: #333;
+}
+
+#watch7-sidebar .watch-sidebar-section:last-child{
+    margin-bottom: 0;
+}
+
+#watch7-sidebar .watch-sidebar-section{
+    position: relative;
+    z-index: 2;
+    margin: 0 0 15px 5px;
+}
+
+#watch7-sidebar-contents{
+    padding-left: 5px;
+    min-height: 390px;
+    margin-top: 0;
 }
 
 #watch7-subscription-container{
@@ -696,6 +687,10 @@ video{
     height: 20px;
 }
 
+.accessible-description{
+    display: none;
+}
+
 .action-panel-loading{
     color: #666;
 }
@@ -712,6 +707,31 @@ video{
     height: 20px;
 }
 
+.addto-button:before {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -85px -45px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.addto-watch-later-button-sign-in{
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.addto-watch-later-button-sign-in .yt-uix-button-arrow{
+    display: none;
+}
+
+.addto-watch-later-button:before, .addto-watch-later-button-sign-in:before {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -220px -244px;
+    background-size: auto;
+    width: 13px;
+    height: 13px;
+}
+
 .appbar-guide-notification-icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -157px -334px;
     background-size: auto;
@@ -725,6 +745,12 @@ video{
 
 .appbar-hidden #masthead-positioner-height-offset{
     height: 50px;
+}
+
+.Caa{
+    left: 54px;
+    position: absolute;
+    top: 17px;
 }
 
 .clearfix{
@@ -765,6 +791,42 @@ video{
     width: 60px;
     height: 60px;
     z-index: 821;
+}
+
+.DJa{
+    background-color: #fff;
+    border: none;
+    border-bottom: 0;
+    border-top: 0;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.E5{
+    cursor: pointer;
+    height: 35px;
+    color: #aaa;
+}
+
+.E5{
+    padding: 5px 10px;
+}
+
+.E5{
+   background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: 1px solid #d5d5d5;
+    margin-left: 65px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
 }
 
 .hid{
@@ -917,9 +979,49 @@ video{
     position: absolute;
 }
 
+.Jea{
+    border: 6px solid #d5d5d5;
+    left: 0;
+    top: 0;
+}
+
 .masthead-search-terms-border{
     border: 1px solid #ccc;
     box-shadow: inset 0 1px 2px #eee;
+}
+
+.Mga, Jea{
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+}
+
+.Mga{
+    border: 7px solid #fff;
+    left: 2px;
+    top: 1px;
+    z-index: 1;
+}
+
+.mj{
+    background-color: #fff;
+    padding: 17px 0 20px 0;
+    position: relative;
+    z-index: 4;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.mj .we{
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.Oga{
+    padding-top:2px;
+    display: block;
 }
 
 .player-height{
@@ -956,10 +1058,119 @@ video{
     width: 640px;
 }
 
+.position-DJa{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.position-Mza{
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 84px;
+}
+
+.related-list-item .content-wrapper{
+    margin-left: 133px;
+}
+
+.related-list-item .thumb-wrapper{
+    position: absolute;
+    top: 0;
+    margin: 0 5px;
+    width: 120px;
+    height: 68px;
+    overflow: hidden;
+}
+
+.related-list-item .thumb-wrapper a{
+    padding: 0;
+}
+
+.related-list-item .video-action{
+    position: absolute;
+    right: -60px;
+    bottom: 2px;
+}
+
 .subscribe-label, .subscribed-label,.unsubscribe-label{
     display: none;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.video-list-item{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.video-list-item a{
+    position: relative;
+    padding: 0 5px;
+    display: block;
+    overflow: hidden;
+    color: #333;
+    zoom: 1; 
+}
+
+.video-list-item .content-link{
+    display: block;
+    min-height: 68px;
+    text-decoration: none;
+}
+
+.video-list-item .content-wrapper a{
+    padding: 0;
+}
+
+.video-list-item .stat{
+    color: #777;
+    font-size: 11px;
+}
+
+.video-list-item .stat{
+    display: block;
+    font-size: .9166em;
+    color: #666;
+    line-height: 1.4em;
+    height: 1.4em;
+    white-space: nowrap;
+}
+
+.video-list-item .title {
+    display: block;
+    font-size: 1.0833em;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #03c;
+    max-height: 2.4em;
+    margin-bottom: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.video-list-item .yt-uix-simple-thumb-wrap{
+    float: left;
+    margin: 0 8px 0 0;
+}
+
+.video-list .video-list-item .title {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.video-list-item a:visited .title {
+    color: #408;
+}
+
+.video-list-item a:hover .title {
+    text-decoration: underline;
+}
+
+.video-list-item .yt-pl-thumb{
+    float: left;
+    margin: 0 8px 0 0;
 }
 
 .video-thumb{
@@ -1004,6 +1215,11 @@ video{
     clear: both;
 }
 
+.watch-sidebar-gutter{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .watch-time-text{
     vertical-align: middle;
 }
@@ -1027,6 +1243,11 @@ video{
     right: 0;
     color: #666;
 }
+
+.Wva{
+    float: left;
+}
+
 
 .yt-base-gutter{
     padding-left: 30px;
@@ -1057,6 +1278,19 @@ video{
 
 .yt-card.yt-uix-expander.yt-uix-button-expander{
     margin: 10px 0 -15px;
+}
+
+.yt-pl-thumb{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.yt-pl-thumb-link{
+    display: block;
+    position: relative;
+    text-align: left;
 }
 
 .yt-sprite{
@@ -1131,6 +1365,16 @@ video{
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
+.yt-uix-button-arrow{
+    margin-top: -3px;
+    margin-left: 5px;
+    border: 1px solid transparent;
+    border-top-color: #333;
+    border-width: 4px 4px 0;
+    width: 0;
+    height: 0;
+}
+
 .yt-uix-button-content{
     vertical-align: middle;
 }
@@ -1146,9 +1390,18 @@ video{
     color: #333;
 }
 
+.yt-uix-button-default:before{
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
 .yt-uix-button-default .yt-uix-button-icon{
     opacity: .5;
     filter: alpha(opacity=50);
+}
+
+.yt-uix-button-empty .yt-uix-button-arrow{
+    margin-left: 0;
 }
 
 .yt-uix-button-empty .yt-uix-button-icon-wrapper{
@@ -1156,7 +1409,7 @@ video{
     max-width: none;
 }
 
-.yt-uix-button-empty .yt-uix-button-icon-wrapper{
+.yt-uix-button-empty .yt-uix-button-icon-wrapper, .yt-uix-button-empty.yt-uix-button-has-icon.no-icon-markup:before{
     margin-right: 0;
 }
 
@@ -1350,6 +1603,21 @@ video{
     height: 24px;
     border-radius: 0 2px 2px 0;
 }*/
+
+.yt-uix-simple-thumb-related{
+    height: 68px;
+}
+
+.yt-uix-simple-thumb-related>img{
+    position: relative;
+    top: -11px;
+}
+
+.yt-uix-simple-thumb-wrap{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
 
 .yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper{
     height: 13px;
