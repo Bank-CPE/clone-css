@@ -7,6 +7,37 @@ and open the template in the editor.
     Created on : Feb 17, 2015, 4:12:23 PM
     Author     : Santi
 */
+::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 16px;
+}
+
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 6px;
+    min-height: 28px;
+    padding: 100px 0 0;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset 0 -1px 0 rgba(0,0,0,.07);
+}
+
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 4px;
+}
 
 a{
     cursor: pointer;
@@ -46,9 +77,48 @@ body{
     text-align: start;
 }
 
+body{
+    font: normal 13px arial,sans-serif
+}
+
+body[Attributes Style] {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+
 body>#body-container{
     height: auto;
     min-height: 100%;
+}
+
+body::-webkit-scrollbar-corner {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 3px 0 0 3px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.14);
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,.14);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 5px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 0 0 0 3px;
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
+    box-shadow: inset 1px 0 0 rgba(0,0,0,.14),inset -1px 0 0 rgba(0,0,0,.07);
 }
 
 button,span{
@@ -95,7 +165,7 @@ button.yt-uix-button{
     box-sizing: border-box;
 }
 
-div{
+div,ul,li{
     margin: 0;
     padding: 0;
     border: 0;
@@ -124,13 +194,65 @@ h1.yt{
     color: #222;
 }
 
+html{
+    display: block;
+}
+
+html[Attributes Style] {
+    -webkit-locale: th;
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
 
 label{
     cursor: default;
 }
 
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
 video{
     object-fit: contain;
+}
+
+#action-panel-details a {
+    color: #333;
+}
+
+#action-panel-overflow-button:before, action-panel-trigger-overflow:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -529px -242px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
 }
 
 #appbar-content{
@@ -317,9 +439,16 @@ video{
     transition: background-color .3s ease;
 }
 
-#watch7-content{
-    width: 640px;
-    z-index: 0;
+#watch-description{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    line-height: 17px;
+    color: #333;
+}
+
+#watch-description-extras{
+    margin-top: 50px;
 }
 
 #watch-header{
@@ -347,6 +476,18 @@ video{
     float: left;
 }
 
+#watch-like:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -498px -125px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+}
+
+#watch7-content{
+    width: 640px;
+    z-index: 0;
+}
+
 #watch7-headline h1{
     line-height: normal;
     overflow: hidden;
@@ -361,6 +502,19 @@ video{
     display: table;
     margin-bottom: 10px;
     width: 100%;
+}
+
+#watch-dislike:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -85px -285px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 1px;
+}
+
+#watch-like-dislike-button .yt-uix-button{
+    margin-right: 0;
+    padding-right: 0;
 }
 
 #watch7-main{
@@ -395,10 +549,33 @@ video{
     overflow: hidden;
 }
 
+#watch7-views-info{
+    position: absolute;
+    bottom: 33px;
+    right: 0;
+    min-width: 160px;
+    max-width: 220px;
+}
+
 #watch8-action-button{
     position: relative;
     padding-top: 5px;
     border-top: 1px solid #e2e2e2;
+    height: 30px;
+}
+
+#watch8-action-button .yt-uix-button{
+    background: none;
+    border: none;
+}
+
+#watch8-secondary-actions{
+    position: absolute;
+    left: -10px;
+}
+
+#watch8-sentiment-actions{
+    float: right;
 }
 
 #yt-masthead{
@@ -512,6 +689,29 @@ video{
     vertical-align: middle;
 }
 
+.addto-button:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -85px -45px;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.action-panel-loading{
+    color: #666;
+}
+
+.action-panel-loading{
+    padding: 20px;
+    text-align: center;
+}
+
+.action-panel-trigger-share:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -375px 0;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+}
+
 .appbar-guide-notification-icon{
     background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -157px -334px;
     background-size: auto;
@@ -544,6 +744,10 @@ video{
     height: 0;
     visibility: hidden;
     clear: both;
+}
+
+.comments-iframe-container{
+    margin-left: -2px;
 }
 
 .content-alignment{
@@ -752,8 +956,36 @@ video{
     width: 640px;
 }
 
+.subscribe-label, .subscribed-label,.unsubscribe-label{
+    display: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .video-thumb{
     position: relative;
+}
+
+.video-extras-sparkbars{
+    height: 2px;
+    overflow: hidden;
+}
+
+.video-extras-sparkbars{
+    height: 2px;
+    overflow: hidden;
+}
+
+.video-extras-sparkbar-dislikes{
+    float: left;
+    height: 2px;
+    background: #ccc;
+}
+
+.video-extras-sparkbar-likes{
+    float: left;
+    height: 2px;
+    background: #167ac6;
 }
 
 .watch #content.content-alignment{
@@ -768,6 +1000,14 @@ video{
     width: 640px;
 }
 
+.watch-meta-item{
+    clear: both;
+}
+
+.watch-time-text{
+    vertical-align: middle;
+}
+
 .watch-title-container{
     display: table-cell;
     vertical-align: top;
@@ -777,6 +1017,15 @@ video{
     width: auto;
     min-width: 1003px;
     max-width: 1066px;
+}
+
+.watch-view-count{
+    font-size: 19px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    color: #666;
 }
 
 .yt-base-gutter{
@@ -795,6 +1044,19 @@ video{
 
 .yt-card.yt-card-has-padding{
     padding: 15px;
+}
+
+.yt-card .yt-uix-button-expander{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    color: #777;
+    border-top: 1px solid #e2e2e2;
+    box-shadow: none;
+}
+
+.yt-card.yt-uix-expander.yt-uix-button-expander{
+    margin: 10px 0 -15px;
 }
 
 .yt-sprite{
@@ -842,6 +1104,15 @@ video{
     height: auto;
 }
 
+.yt-ui-menu-content{
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    outline: none;
+    overflow: visible;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+}
+
 .yt-uix-button{
     display: inline-block;
     height: 28px;
@@ -860,6 +1131,10 @@ video{
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
+.yt-uix-button-content{
+    vertical-align: middle;
+}
+
 .yt-uix-button .yt-uix-button-arrow, .yt-uix-button .yt-uix-button-icon{
     display: inline-block;
     vertical-align: middle;
@@ -871,6 +1146,11 @@ video{
     color: #333;
 }
 
+.yt-uix-button-default .yt-uix-button-icon{
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
 .yt-uix-button-empty .yt-uix-button-icon-wrapper{
     max-height: none;
     max-width: none;
@@ -880,9 +1160,23 @@ video{
     margin-right: 0;
 }
 
+.yt-uix-button-group{
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
 .yt-uix-button-has-icon:before{
     content: '';
     display: inline-block;
+    vertical-align: middle;
+}
+
+.yt-uix-button-has-icon.no-icon-markup:before{
+    margin-right: 6px;
+}
+
+.yt-uix-button-has-icon.no-icon-markup .yt-uix-button-content{
     vertical-align: middle;
 }
 
@@ -907,6 +1201,20 @@ video{
     vertical-align: middle;
 }
 
+.yt-uix-button-group .yt-uix-button{
+   margin-right: -1px;
+   border-radius: 0;
+}
+
+.yt-uix-button-opacity{
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.yt-uix-button-opacity{
+    box-shadow: none;
+}
+
 .yt-uix-button-primary{
     border-color: #167ac6;
     background: #167ac6;
@@ -919,6 +1227,65 @@ video{
     display: inline-block;
 }
 
+.yt-subscription-button-subscriber-count-branded-horizontal{
+    padding: 0 6px;
+    height: 22px;
+    color: #777;
+    font-size: 11px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.yt-subscription-button-subscriber-count-branded-horizontal{
+    display: none;
+    margin-left: -2px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    vertical-align: middle;
+    border-radius: 0 2px 2px 0;
+}
+
+.yt-uix-button-subscribe-branded{
+    color: #fefefe;
+    background-color: #e62117;
+}
+
+.yt-uix-button-subscribe-branded:before{
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -85px -172px;
+    background-size: auto;
+    width: 16px;
+    height: 12px;
+}
+
+
+.yt-uix-button-subscribe-branded .subscribe-label{
+    display: inline;
+}
+
+.yt-uix-button-subscribe-branded .yt-uix-button-content{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.yt-uix-button-subscribe-branded .yt-uix-button-content{
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+
+.yt-uix-button-subscribe-branded+.yt-subscription-button-subscriber-count-branded-horizontal{
+    border-left-color: transparent;
+}
+
+.yt-uix-button-subscribe-branded+.yt-subscription-button-subscriber-count-branded-horizontal{
+    display: inline-block;
+}
+
 .yt-uix-button-text{
     border: solid 1px transparent;
     outline: 0;
@@ -927,7 +1294,70 @@ video{
     box-shadow: none;
 }
 
+.yt-uix-clickcard-target{
+    cursor: pointer;
+}
 
+.yt-uix-clickcard-content{
+    display: none;
+}
+
+.yt-uix-expander-collapsed #watch-description-text{
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.yt-uix-expander-collapsed .yt-uix-expander-body{
+    display: block;
+}
+
+.yt-uix-expander-collapsed .yt-uix-expander-body{
+    display: none;
+}
+
+.yt-uix-expander-head{
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+.yt-uix-menu{
+    display: inline-block;
+    position: relative;
+}
+
+.yt-uix-menu .yt-uix-menu-content{
+    left: 100%;
+    top: 0;
+}
+
+.yt-uix-menu-content{
+    position: absolute;
+    z-index: 2000000100;
+}
+
+
+.yt-uix-menu-content .yt-uix-menu, yt-uix-menu-trigger{
+    width: 100%;
+}
+.yt-uix-menu-content-hidden{
+    display: none;
+}
+
+/*.yt-uix-subscription-preferences-button{
+    display: none;
+    margin-left: -2px;
+    padding: 0 4px;
+    height: 24px;
+    border-radius: 0 2px 2px 0;
+}*/
+
+.yt-uix-subscription-preferences-button .yt-uix-button-icon-wrapper{
+    height: 13px;
+}
+
+.yt-uix-tooltip{
+    display: inline-block;
+}
 
 .yt-valign{
     white-space: nowrap;

@@ -4,9 +4,9 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html class="no-focus-outline">
+<html class="no-focus-outline content-snap-width-skinny-mode">
     <head>
-        <title>TODO supply a title</title>
+        <title>My Youtube</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" />
@@ -166,18 +166,109 @@ and open the template in the editor.
                                                 </div>
                                                 <span id="watch7-subscription-container">
                                                     <span class="yt-uix-button-subscription-container">
-                                                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-can-buffer yt-uix-subscription-button" type="button"></button>
-                                                        <button></button>
-                                                        <span></span>
-                                                        <div></div>            
+                                                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-can-buffer yt-uix-subscription-preferences-button" type="button">
+                                                            <span class="yt-uix-button-content">
+                                                                <span class="subscribe-label">ติดตาม</span>
+                                                                <span class="subscribed-label">ติดตามแล้ว</span>
+                                                                <span class="unsubscribe-label">ยกเลิกการสมัคร</span>
+                                                            </span>
+                                                        </button>
+                                                        <span class="yt-subscription-button-subscriber-count-branded-horizontal">9,999,999</span>
+                                                        <div class="yt-uix-overlay"></div>            
                                                     </span>
                                                 </span>
                                             </div>
-                                            <div id="watch8-action-button" class="watch-action-button clearfix">action-button</div>
+                                            <div id="watch8-action-button" class="watch-action-button clearfix">
+                                                <div id="watch8-secondary-actions" class="watch-secondary-actions yt-uix-button-group">
+                                                    <span class="yt-uix-clickcard">
+                                                        <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target addto-button yt-uix-tooltip" type="button">
+                                                            <span class="yt-uix-button-content">เพิ่มลงใน</span>
+                                                        </button>
+                                                        <div class="sigin-clickcard yt-uix-clickcard-content"></div>
+                                                    </span>
+                                                    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup action-panel-trigger action-panel-trigger-share yt-uix-tooltip" type="button">
+                                                        <span class="yt-uix-button-content">แชร์</span>
+                                                    </button>
+                                                    <div class="yt-uix-menu">
+                                                        <div class="yt-uix-menu-trigger">
+                                                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-tooltip" type="button" id="action-panel-overflow-button" role="button">
+                                                                <span class="yt-uix-button-content">เพิ่มเติม</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="watch8-sentiment-actions">
+                                                    <div id="watch7-views-info">
+                                                        <div class="watch-view-count">1</div>
+                                                        <div class="video-extras-sparkbars">
+                                                            <div class="video-extras-sparkbar-likes" style="width: 90.0715563506%"></div>
+                                                            <div class="video-extras-sparkbar-dislikes" style="width: 9.92844364937%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <span id="watch-like-dislike-button" class="yt-uix-button-group">
+                                                        <span class="yt-uix-clickcard">
+                                                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target yt-uix-tooltip" type="button" id="watch-like">
+                                                                <span class="yt-uix-button-content">1</span>
+                                                            </button>
+                                                            <div class="signin-clickcard yt-uix-clickcard-content"></div>
+                                                        </span>
+                                                        <span class="yt-uix-clickcard">
+                                                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-opacity yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target yt-uix-tooltip" type="button" id="watch-dislike">
+                                                                <span class="yt-uix-button-content">0</span>
+                                                            </button>
+                                                            <div class="signin-clickcard yt-uix-clickcard-content"></div>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div id="watch-action-panels" class="watch-action-panels yt-uix-button-panel hid yt-card-has-padding"></div>
-                                        <div id="action-panel-details" class="action-panel-content yt-card yt-card-has-padding yt-uix-expander yt-uix-expander-collapsed"></div>
-                                        <div id="watch-discussion" class="yt-card branded-page-box scrolldetect"></div>
+                                        <div id="action-panel-details" class="action-panel-content yt-card yt-card-has-padding yt-uix-expander yt-uix-expander-collapsed">
+                                            <div id="watch-description" class="yt-uix-button-panel">
+                                                <div id="watch-description-content">
+                                                    <div id="watch-description-clip">
+                                                        <div id="watch-uploader-info">
+                                                            <strong class="watch-time-text">เผยแพร่เมื่อ 22 ก.พ. 2015</strong>
+                                                        </div>
+                                                        <div id="watch-description-text">
+                                                            <p id="eow-description">
+                                                                ชื่อ นายสันติ หอมชื่น
+                                                                <br>
+                                                                รหัสนักศึกษา 5551000564
+                                                                <br>
+                                                                CPE4235 Sec.1
+                                                                <br>
+                                                                <br>
+                                                                Facebook : 
+                                                                <a href="https://www.facebook.com/smile.love.148" target="blank" title="https://www.facebook.com/smile.love.148" rel="nofollow" class="yt-uix-redirect-link">https://www.facebook.com/smile.love.148</a>
+                                                                <br>
+                                                            </p>
+                                                        </div>
+                                                        <div id="watch-description-extras"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-expander yt-uix-expander-head yt-uix-expander-collapsed-body yt-uix-gen204" type="button">
+                                                <span class="yt-uix-button-content">แสดงเพิ่มเติม</span>
+                                            </button>
+                                            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-expander yt-uix-expander-head yt-uix-expander-body" type="button"></button>
+                                            <div id="watch-discussion" class="yt-card branded-page-box scrolldetect">
+                                                <div class="comments-iframe-container">
+                                                    <div id="comments-test-iframe" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 613px; height: 500px; background: transparent;">
+                                                        <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top:0px; width: 612px; margin: 0px; border-style: none; max-width: 612px; left: 0px; visibility: visible; height: 500px;" width="100%" id="I0_1424414321655">
+                                                            #document
+                                                            <html lang="th" dir="ltr">
+                                                                <head></head>
+                                                                <body class="kv8eNc Mb" marginwidth="0" marginheight="0">
+                                                                    <div id="root"></div>
+                                                                </body>
+                                                            </html>
+                                                        </iframe>
+                                                    </div>
+                                                    <div id="distiller-spinner" class="action-panel-loading hid" style="display: none;"></div>
+                                                </div>
+                                            </div>
                                     </div>
                                     <div id="watch7-sidebar" class="watch-sidebar"></div>
                                 </div>
