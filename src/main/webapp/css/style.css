@@ -29,6 +29,13 @@ a.yt-uix-button{
     box-sizing: border-box;
 }
 
+a.yt-uix-button:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
 body{
     background: #f1f1f1;
 }
@@ -109,7 +116,7 @@ button{
     box-sizing: border-box;
 }
 
-button.yt-uix-button{
+button .yt-uix-button{
     text-decoration: none;
     box-sizing: border-box;
 }
@@ -268,7 +275,7 @@ video{
 }
 
 #body-container{
-    padding-bottom: 191px;
+/*    padding-bottom: 191px;*/
     box-sizing: border-box;
 }
 
@@ -277,16 +284,33 @@ video{
     padding: 15px 0;
 }
 
-#footer #google-help{
+#footer #google-help ,#footer .pickers li{
     display: inline-block;
+}
+
+#footer .footer-history{
+    margin-right: 14px;
+}
+
+#footer-links li{
+    display: inline;
+    margin-right: 15px;
 }
 
 #footer .pickers{
     display: inline-block;
 }
 
-#footer .footer-history{
+#footer .pickers li{
     margin-right: 14px;
+}
+
+
+#footer .yt-uix-button-icon-footer-history {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -40px 0;
+    background-size: auto;
+    width: 12px;
+    height: 15px;
 }
 
 #footer .yt-uix-button-icon-footer-language {
@@ -296,8 +320,33 @@ video{
     height: 15px;
 }
 
+#footer .yt-uix-button-icon-questionmark {
+    background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflZjw0oc.webp) -188px -66px;
+    background-size: auto;
+    width: 15px;
+    height: 16px;
+}
+
 #footer-links{
     padding: 15px 0 15px 8px;
+}
+
+#footer-links-primary{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#footer-links-primary a{
+    color: #333;
+}
+
+#footer-links-secondary a {
+    font-weight: bold;
+}
+
+#footer-links-secondary a{
+    color: #666;
+    font-size: 11px;
 }
 
 #footer-logo{
@@ -1326,6 +1375,7 @@ video{
 
 
 .yt-base-gutter{
+    min-width: 943px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -1392,7 +1442,7 @@ video{
 .yt-thumb-clip{
     position: absolute;
     bottom: -100px;
-    top: -100px;
+    top: -58px;
     left: -100px;
     right: -100px;
     text-align: center;
